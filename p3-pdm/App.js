@@ -80,7 +80,8 @@ const styles = StyleSheet.create({
   },
   catImage: {
     width: '100%',
-    height: 300,
+    aspectRatio: 5,
+    height: '100%',
     borderRadius: 10,
     marginBottom: 15, 
   },
