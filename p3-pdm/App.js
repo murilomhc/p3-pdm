@@ -10,7 +10,7 @@ const fetchCats = async () => {
   setLoading(true);
   try {
     const response = await axios.get('https://api.thecatapi.com/v1/images/search?limit=5');
-    setCats(response.data); 
+    setCats(response.data.slice(0, 5)); 
   } catch (error) {
     console.error("Erro ao buscar gatinhos:", error);
   } finally {
